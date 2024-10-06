@@ -21,7 +21,7 @@ def lab3Question2(decimal_number):
        return "invalid"
     elif decimal_number > 0:
         return "positive"
-    else:
+    elif decimal_number < 0:
         return "negative"
 
 def lab3Question3(year):
