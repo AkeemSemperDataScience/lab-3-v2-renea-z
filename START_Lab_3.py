@@ -63,5 +63,39 @@ def lab3Question5(temperature, scale_used):
     # Return "Solid" if water is in solid state at that temperature
     # Return "Gas" if water is in gas state at that temperature
     # Return "Invalid" if the temperature or scale are invalid
-    pass
+    #divide into farenheit and celcius
+    #At low temperatures (below 0 C or below 32 F), water is a solid.
+    #When at "normal" temperatures (between 0 C and 100 C/ between 32 F and 212 F), it is a liquid. 
+    #At temperatures above 100 C/above 212 F, water is a gas (steam).
+    #absolute zero is the lowest temperature possible 
+    #at highest temperature possible (Plancks temp) water would not even be what we know water to be so we will not consider that
+    absolute_zero_celcius = -273.15 
+    absolute_zero_farenheit = -460
+    if scale_used not in ["C","F"]:
+      return "Invalid"
+    if scale_used == "C":
+        if temperature < absolute_zero_celcius: 
+            return "Invalid"
+        elif temperature < 0:
+            return "solid"
+        elif 0 <= temperature < 100:
+            return "liquid"
+        elif temperature > 100:
+            return "gas"
+    elif scale_used == "F":
+        if temperature < absolute_zero_farenheit:
+            return "Invalid"
+        elif temperature < 32:
+            return "solid"
+        elif 32 <= temperature <= 213:
+            return "liquid"
+        elif temperature > 212:
+            return "gas"
+        
+
+      
+
+
+      
+
  
