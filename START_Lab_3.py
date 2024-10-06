@@ -77,20 +77,20 @@ def lab3Question5(temperature, scale_used):
         if temperature < absolute_zero_celcius: 
             return "Invalid"
         elif temperature < 0:
-            return "solid"
+            return "Solid"
         elif 0 <= temperature < 100:
-            return "liquid"
+            return "Liquid"
         elif temperature > 100:
-            return "gas"
+            return "Gas"
     elif scale_used == "F":
         if temperature < absolute_zero_farenheit:
             return "Invalid"
         elif temperature < 32:
-            return "solid"
+            return "Solid"
         elif 32 <= temperature <= 213:
-            return "liquid"
+            return "Liquid"
         elif temperature > 212:
-            return "gas"
+            return "Gas"
         
 
       
