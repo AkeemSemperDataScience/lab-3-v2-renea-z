@@ -19,9 +19,9 @@ def lab3Question2(decimal_number):
         return "zero"
     elif not isinstance(decimal_number, float):
        return "invalid"
-    elif decimal_number >0:
+    elif decimal_number > 0:
         return "positive"
-    elif decimal_number <0:
+    else:
         return "negative"
 
 def lab3Question3(year):
@@ -63,4 +63,4 @@ def lab3Question5(temperature, scale_used):
     # Return "Gas" if water is in gas state at that temperature
     # Return "Invalid" if the temperature or scale are invalid
     pass
-
+ 
